@@ -1,3 +1,6 @@
+##_Shamelessly copied from [Eric Mill's](https://konklone.com/post/switch-to-https-now-for-free) excellent guide!_
+_Eric's guide was helpful beyond words, and as I have to renew the SSL certificate annually, I needed to ensure that I can continue to access it..._
+
 A quick overview: to use HTTPS on the web today, you need to obtain a certificate file that's signed by a company that browsers trust. Once you have it, you tell your web server where it is, where your associated private key is, and open up port 443 for business. You don't necessarily have to be a professional software developer to do this, but you do need to be **okay with the command line**, and comfortable configuring **a web server you control**.
 
 Most certificates cost money, but at Micah Lee's [suggestion](https://twitter.com/micahflee/status/368163493049933824), I used [StartSSL](https://www.startssl.com). They're who the [EFF](https://www.eff.org/) uses, and **their basic certificates for individuals are free**.
@@ -9,10 +12,6 @@ More importantly, if your certificate needs to be revoked someday, StartCom will
 Still, StartCom makes getting started with SSL simple and inexpensive. Their website is difficult to use at first — especially if you're new to the concepts and terminology behind SSL certificates (like I was). Fortunately, it's not actually that hard; it's just a lot of small steps.
 
 Below, we'll go step by step through signing up with StartSSL and creating your certificate. We'll also cover installing it via nginx, but you can use the certificate with whatever web server you want.
-
-<div class="callout">
-Final reminder: <strong><a href="https://sslmate.com">SSLMate</a></strong> is <a href="https://sslmate.com/help/getting_started">way easier</a> than this. It's not too late!
-</div>
 
 ## Register with StartSSL
 
